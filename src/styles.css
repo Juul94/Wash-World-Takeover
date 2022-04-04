@@ -1,0 +1,333 @@
+@font-face {
+  font-family: font_heading;
+  src: url(font/heading.otf);
+}
+
+@font-face {
+  font-family: font_body;
+  src: url(font/body.otf);
+}
+
+:root {
+  --green: #00c167;
+  --lightgreen: #28dc88;
+  --grey: #f6f6f6;
+  --white: #ffffff;
+  --black: #000000;
+  --darkgrey: #afafaf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--grey);
+  font-family: var(--font);
+  margin-bottom: 75px;
+}
+
+.navbar {
+  background: var(--black);
+  height: 80px;
+  padding: 0 35px !important;
+  overflow: hidden;
+}
+
+.nav_style {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* .nav_style a {
+  margin:0 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  display:block;
+  text-align:center;
+  padding:20px 15px;
+  border-top: 6px solid transparent;
+  transition:all 0.3s;
+  font-family: font_heading;
+  background-image: linear-gradient(var(--green), var(--green));
+  background-size: 0% 10px;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s;
+  background-position: 50% calc(100% - 0px);
+}
+
+.nav_style a:hover {
+  background-size: 100% 10px;
+  transition:all 0.2s;
+} */
+
+h1,
+h2,
+.hf {
+  font-family: font_heading;
+}
+
+p,
+.bf {
+  font-family: font_body;
+}
+
+.content {
+  font-family: font_body;
+  margin: 25px 35px !important;
+}
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+}
+
+.container_mt {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.container_prod {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.border_style {
+  width: 100%;
+  background-color: green;
+  border-bottom: 4px solid var(--green);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.location_card {
+  background-color: white;
+  position: relative;
+}
+
+.product_card {
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  margin: 25px 0 !important;
+}
+
+.spacing {
+  padding: 25px;
+}
+
+.btn_select {
+  text-align: center !important;
+  width: 100%;
+  color: white;
+  font-family: font_heading;
+  outline: none;
+  border: none;
+  padding: 12.5px;
+  text-align: right;
+  background-color: var(--green);
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+.btn_select:hover {
+  background-color: var(--lightgreen);
+  transition: all 0.4s;
+  color: white;
+}
+
+.btn_select_disabled {
+  width: 100%;
+  color: white;
+  text-align: center !important;
+  font-family: font_heading;
+  outline: none;
+  border: none;
+  padding: 12.5px;
+  text-align: right;
+  background-color: var(--darkgrey);
+  transition: all 0.4s;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.btn_select_disabled:hover {
+  cursor: default;
+  color: white;
+  pointer-events: none;
+}
+
+.link_style_error {
+  color: white !important;
+  font-family: font_heading;
+  padding: 10px 15px;
+  background-color: var(--green);
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.link_style_error:hover {
+  background-color: var(--lightgreen);
+  transition: 0.3s all;
+}
+
+.btn_select_prod {
+  width: 300px;
+  color: white;
+  font-family: font_heading;
+  outline: none;
+  border: none;
+  padding: 12.5px;
+  text-align: right;
+  background-color: var(--green);
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 15% 100%, 34% 0);
+  transition: all 0.4s;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+}
+
+.btn_select_prod:hover {
+  background-color: var(--lightgreen);
+  transition: all 0.4s;
+  color: white;
+}
+
+.border_regular {
+  border-bottom: 4px solid var(--green);
+  transition: all 0.4s;
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.border_hover {
+  border-bottom: 4px solid var(--lightgreen);
+  transition: all 0.4s;
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.border_hover_disabled {
+  border-bottom: 4px solid var(--darkgrey);
+}
+
+.green {
+  color: var(--green);
+}
+
+.darkgrey {
+  color: var(--darkgrey);
+}
+
+.dot {
+  height: 35px;
+  width: 35px;
+  background-color: var(--green);
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  padding-top: 5.5px;
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: font_heading;
+}
+
+.dot_active {
+  height: 35px;
+  width: 35px;
+  background-color: var(--lightgreen);
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  padding-top: 5.5px;
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: font_heading;
+}
+
+.link_style {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s all;
+}
+
+.link_style:hover {
+  color: var(--lightgreen);
+  transition: 0.2s all;
+}
+
+.h2_small {
+  font-size: 18px;
+}
+
+.h2_smallest {
+  font-size: 17px;
+}
+
+.heading_color,
+.color_highlight {
+  color: var(--green);
+}
+
+.h_price {
+  font-size: 80px;
+}
+
+.h_small {
+  font-size: 15px;
+  margin-left: -15px;
+}
+
+[class*="col-"] {
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+table {
+  font-family: font_heading;
+}
+
+.h2_countdown {
+  font-size: 45px;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.popularProd {
+  box-shadow: 0px 0px 0px 5px var(--green) inset;
+}
+
+.popularBanner {
+  width: 100px;
+  text-transform: uppercase;
+  font-family: font_heading;
+  font-size: 14px;
+  border: 1px solid black;
+  margin-top: 5px;
+  padding: 3px 0;
+  text-align: center;
+  float: right;
+}
+
+.h2_highlight {
+  color: var(--lightgreen);
+  text-decoration: underline;
+}
