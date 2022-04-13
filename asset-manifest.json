@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LoginPage/static/css/main.dd16e8f9.css",
+    "main.js": "/LoginPage/static/js/main.13e729c7.js",
+    "static/media/heading.otf": "/LoginPage/static/media/heading.0094146a0505298ed06a.otf",
+    "static/media/body.otf": "/LoginPage/static/media/body.cc7ab55d27205bd64001.otf",
+    "static/media/ww-logo-white.svg": "/LoginPage/static/media/ww-logo-white.c46f2c0382b77a4d838fee5d20ce6c9c.svg",
+    "index.html": "/LoginPage/index.html",
+    "main.dd16e8f9.css.map": "/LoginPage/static/css/main.dd16e8f9.css.map",
+    "main.13e729c7.js.map": "/LoginPage/static/js/main.13e729c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd16e8f9.css",
+    "static/js/main.13e729c7.js"
+  ]
+}
